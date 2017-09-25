@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        navigator.geolocation.watchPosition((position) => {
+            document.querySelector("#latitude").innerHTML = position.coords.latitude
+            document.querySelector("#longitude").innerHTML = position.coords.longitude
+        })
+    </script>
+</head>
+<body>
+    <div>北緯 <span id="latitude"></span></div>
+    <div>東経 <span id="longitude"></span></div>
+</body>
+</html>
