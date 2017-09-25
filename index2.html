@@ -10,6 +10,7 @@
             document.querySelector("#latitude").innerHTML = position.coords.latitude
             document.querySelector("#longitude").innerHTML = position.coords.longitude
             document.querySelector("#accuracy").innerHTML = position.coords.accuracy
+            document.querySelector("#googlemap-link").setAttribute("href", "https://maps.google.com/maps?q=" + position.coords.latitude + "," + position.coords.longitude + ", 15z")
         },(err) => {},{
             enableHighAccuracy: true
         });
@@ -19,5 +20,6 @@
     <div>北緯 <span id="latitude"></span>度</div>
     <div>東経 <span id="longitude"></span>度</div>
     <div>誤差 <span id="accuracy"></span>m</div>
+    <div><a href="#" id="googlemap-link">Googleマップ</a></div>
 </body>
 </html>
