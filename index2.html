@@ -12,7 +12,7 @@
             document.querySelector("#accuracy").innerHTML = position.coords.accuracy
             document.querySelector("#googlemap-link").setAttribute("href", "https://maps.google.com/maps?q=" + position.coords.latitude + "," + position.coords.longitude + ", 15z")
         },(err) => {},{
-            enableHighAccuracy: true
+            // enableHighAccuracy: true
         });
     </script>
 </head>
