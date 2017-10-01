@@ -19,6 +19,7 @@ gulp.task("bs-reload", function(){
 
 gulp.task("default", ["browser-sync"], function(){
     gulp.watch("./*.html", ["bs-reload"]);
+    gulp.watch("./ITF-code/**", ['bs-reload']);
     gulp.watch("./style/**", ["bs-reload"]);
     gulp.watch("./script/**", ["bs-reload"]);
     
