@@ -1,0 +1,25 @@
+body, html{
+    text-align: center;
+}
+
+canvas#canvas{
+    margin: 100px auto auto auto;
+    display: block;
+    display: none;
+}
+
+form#form{
+    text-align: center;
+}
+
+form#form > *{
+    display: block;
+    margin: 25px auto;
+}
+
+form#form > textarea{
+    font-size: 20px;
+    line-height: 50px;
+    width: 80%;
+    text-align: center;
+}

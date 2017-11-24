@@ -13,7 +13,7 @@ if (arg.text) {
     let shadowCtx = shadowCanvas.getContext('2d');
 
     let img = new Image();
-    img.src = "sarahah.jpg?" + new Date().getTime();
+    img.src = "./res/sarahah.jpg?" + new Date().getTime();
 
     let text = decodeURI(arg.text);
     shadowCtx.text = text

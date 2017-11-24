@@ -4,11 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./style/style.css">
     <title>Document</title>
 </head>
 <body>
-    <canvas id="canvas" width="1200px" height="564px" style="margin: 100px auto auto auto; display: block; display: none;"></canvas>
-    <img src="1x1.png" alt="結果" id="result-img">
+    <h1>Sarahahジェネレーター</h1>
+    <p>
+        PC版のSarahahからも画像生成してツイートしたいと思ったのでChrome拡張を書こうと思いましたが、その副産物でSarahahジェネレーターが書けたので公開します。 <br>
+        というかだれかこれもとにChrome拡張作って。
+    </p>
+    <form action="" method="get" id="form">
+        <textarea name="text"></textarea>
+        <input type="submit" value="作成">
+    </form>
+    <canvas id="canvas" width="1200px" height="564px"></canvas>
+    <img src="./res/1x1.png" alt="結果" id="result-img">
     <script src="index.js"></script>    
+    <script>
+        const form = document.getElementById('form');
+        form.setAttribute('action', location.href);
+    </script>
 </body>
 </html>
