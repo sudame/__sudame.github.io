@@ -15,7 +15,8 @@ if (arg.text) {
     let img = new Image();
     img.src = "./res/sarahah.jpg?" + new Date().getTime();
 
-    let text = decodeURI(arg.text);
+    console.log(arg.text);
+    let text = decodeURIComponent(arg.text).replace(/\+/g," ");
     shadowCtx.text = text
 
     shadowCtx.font = '48px sans-selif';
