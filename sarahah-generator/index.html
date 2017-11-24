@@ -1,17 +1,32 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta property="og:title" content="Sarahahジェネレーター" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://sudame.net/sarahah-generator/" />
+    <meta property="og:image" content="http://sudame.net/sarahah-generator/res/sarahah-result.png" />
+    <meta property="og:site_name" content="Sarahahジェネレーター" />
+    <meta property="og:description" content="Sarahahの画像を生成できます。需要ゼロだと思いますが制作過程の副産物なので許して。" />
+
+    <!--  Facebook用設定 -->
+    <meta property="fb:app_id" content="1998495417097650" />
+
+    <!-- ※ Twitter共通設定 -->
+    <meta name="twitter:card" content="summary_large_image"/>
     <link rel="stylesheet" href="./style/style.css">
     <title>Sarahahジェネレーター</title>
 </head>
+
 <body>
     <h1>Sarahahジェネレーター</h1>
     <p>
-        PC版のSarahahからも画像生成してツイートしたいと思ったのでChrome拡張を書こうと思いましたが、その副産物でSarahahジェネレーターが書けたので公開します。 <br>
-        というかだれかこれもとにChrome拡張作って。
+        PC版のSarahahからも画像生成してツイートしたいと思ったのでChrome拡張を書こうと思いましたが、その副産物でSarahahジェネレーターが書けたので公開します。
+        <br> というかだれかこれもとにChrome拡張作って。
     </p>
     <form action="" method="get" id="form">
         <textarea name="text"></textarea>
@@ -19,10 +34,11 @@
     </form>
     <canvas id="canvas" width="1200px" height="564px"></canvas>
     <img src="./res/1x1.png" alt="結果" id="result-img">
-    <script src="index.js"></script>    
+    <script src="index.js"></script>
     <script>
         const form = document.getElementById('form');
         form.setAttribute('action', location.href);
     </script>
 </body>
+
 </html>
