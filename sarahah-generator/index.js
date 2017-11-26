@@ -72,6 +72,7 @@ if (arg.text) {
 
         function setImg() {
             let imgSrc = canvas.toDataURL();
+            console.log(imgSrc);
             document.getElementById('result-img').setAttribute('src', imgSrc);
         }
 
