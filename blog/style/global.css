@@ -1,3 +1,55 @@
+html, body{
+    background-color: #F6F6F6;
+    margin: 50px;
+}
+
+@media(max-width: 800px){
+    html, body{
+        margin: 25px 0;
+    }
+}
+
+div.content{
+    box-sizing: border-box;
+    background-color: #ffffff;
+    padding: 100px;
+    max-width: 1100px;
+    margin: auto auto;
+}
+
+@media(max-width: 500px){
+    div.content{
+        padding: 10%;
+    }
+}
+
 h1 {
-    color: red;
+    white-space: nowrap;    
+    text-align: center;
+    border-bottom: 5px solid black;
+    padding-bottom: 10px;
+    margin-bottom: 50px;
+}
+
+h2 {
+    border-bottom: 2px solid black;
+    border-left: 7px solid black;
+    padding-left: 15px;
+}
+
+section{
+    margin: 50px auto;
+}
+
+section > p, section > blockquote{
+    line-height: 25px;
+    letter-spacing: 0.05em;
+}
+
+blockquote{
+    background-color: #eeeeee;
+    margin: 0;
+    border-left: 8px solid rgba(20, 20, 20, 0.5);
+    color: rgb(30, 30, 30);
+    padding: 20px 10px 20px 20px;
 }
