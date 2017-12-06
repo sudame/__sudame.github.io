@@ -53,3 +53,25 @@ blockquote{
     color: rgb(30, 30, 30);
     padding: 20px 10px 20px 20px;
 }
+
+h3.count,section.tsumatta h3{
+    counter-increment: number;
+}
+
+h3.count::before{
+    content: counter(number)". ";
+}
+
+section.tsumatta h3::before{
+    content: "[詰まりその" counter(number) "] ";
+}
+
+code{
+    display: inline-block;
+    background-color: #EDEDEE;
+    padding: 0 5px;
+}
+
+span.bold{
+    font-weight: bold;
+}
