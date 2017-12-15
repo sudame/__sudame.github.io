@@ -75,3 +75,52 @@ code{
 span.bold{
     font-weight: bold;
 }
+
+section > img{
+    width: 80%;
+    display: block;
+    margin: auto auto;
+}
+
+@media(max-width: 800px){
+    section > img{
+        width: 100%;
+    }
+}
+
+twitterwidget, iframe[id^="twitter-widget-"] {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+li.L0,
+li.L1,
+li.L2,
+li.L3,
+li.L5,
+li.L6,
+li.L7,
+li.L8 { list-style-type: inherit }
+
+pre.prettyprint {
+ padding: 0 0 0 25px;
+ background-color: #FFF;
+ border: 1px dotted #888;
+ font-family: Menlo, Consolas, 'DejaVu Sans Mono', monospace;
+ font-size: 14px;
+ line-height: 1.4;
+ word-wrap:normal
+}
+ol.linenums {
+ margin-top: 0;
+ margin-bottom: 0;
+ background-color: #FFF;
+}
+li.L0,li.L1,li.L2,li.L3,li.L4,li.L5,li.L6,li.L7,li.L8,li.L9 {
+ padding-left: 15px;
+ line-height: 1.5;
+ border-left: 2px solid #6CE26C;
+}
+li.L1,li.L3,li.L5,li.L7,li.L9 {
+ background: #F8F8F8;
+}

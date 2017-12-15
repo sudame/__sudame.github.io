@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-46570379-5"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-46570379-5');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+    <link rel="stylesheet" href="./style/global.css">
+    <meta property="og:site_name" content="人のネタをパクってITF.の統一認証もどきを書いてみた話" />
+    <meta property="og:title" content="人のネタをパクってITF.の統一認証もどきを書いてみた話" />
+    <meta property="og:image" content="http://sudame.net/blog/images/sudamenoare.png" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="http://sudame.net/blog/20171212" />
+    <meta property="og:description" content="coins Advent Calendar 2017 12日目の記事です。相変わらず提出が遅くてすみません。" />
+    <meta name="twitter:card" content="summary" />
+    <meta property="fb:app_id" content="151124392185413" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>人のネタをパクってITF.の統一認証もどきを書いてみた話</title>
+    <script src="./scripts/global.js"></script>
+</head>
+
+<body>
+    <div class="content">
+        <h1>
+            <span>人のネタを<wbr>パクって<wbr>ITF.の<wbr>統一認証もどきを<wbr>書いてみた話</span>
+        </h1>
+        <section>
+            <p>
+                遅れてすみません。
+            </p>
+            <p>
+                これは coins Advent Calendar 12 日目の記事です。
+            </p>
+            <p>
+                coins Advent Calendar 2017 の Adventar は
+                <a href="https://adventar.org/calendars/2724">こちら</a>
+            </p>
+            <p>
+                coins Advent Calendar の前回の投稿は
+                <a href="http://katsura-jp.hatenablog.com/entry/2017/12/04/162219">こちら</a>
+            </p>
+        </section>
+        <section>
+            <h2>自己紹介</h2>
+            <p>
+                こんにちは、coins17を代表するイキり人間、すだめ(
+                <a href="https://twitter.com/ITF_sudame">@ITF_sudame</a> )です。
+            </p>
+            <p>
+                公開が1日遅れてしまいました。落単です。
+            </p>
+            <p>
+                今回はcoinsのつよい人たちに混じって技術系のお話を頑張って書きました。間違っている箇所や修正したほうが良い箇所はぜひ教えてください。
+            </p>
+        </section>
+        <section>
+            <h2>何をやったか</h2>
+            <p>
+                Node.js + Express + Passport で簡単に認証ができると聞いたので、実際に試してみました。
+            </p>
+        </section>
+        <section>
+            <h2>動機</h2>
+            <p>
+                僕は学校祭実行委員会に所属しているのですが、仕事中に「雙峰祭オンラインシステム(SOS)に認証システム欲しくない？ wow wow」という話になりました。
+            </p>
+            <p>
+                僕はおそらく直接開発することにはなりませんが、友人(
+                <a href="http://twitter.com/nandenjin">@nandenjin</a>)が面白いネタを提供してくれたので、書く機運が高まりました。
+            </p>
+            <p>
+                また、
+                <a href="https://sarahah-generator.herokuapp.com/">Twitter認証を用いたWEBアプリケーション</a>も作りたいなあと思っていたところだったので、書いちゃおうということで講義中にちまちまと作っていきました。
+            </p>
+        </section>
+        <section>
+            <h2>Twitter認証をやってみた</h2>
+            <p>まずはTwitter認証をやってみました。</p>
+            <p>
+                Twitter認証に関しては、
+                <a href="http://www.passportjs.org/docs/twitter/">Passportの公式ドキュメント</a>とにらめっこすれば大丈夫です。
+            </p>
+            <p>
+                少し引っかかったところとすれば、Herokuにデプロイするときの session 周りでしょうか。
+            </p>
+        </section>
+
+    </div>
+</body>
+
+</html>
