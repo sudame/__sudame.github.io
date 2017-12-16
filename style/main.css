@@ -16,13 +16,28 @@ div.centering{
     height: 100%;
     text-align: center;
     vertical-align: middle;
+}
+
+div.centering > p{
     font-size: 15vw;
     font-weight: 900;
 }
 
+a.twitter-share-button{
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    font-weight: 900;
+    background-color: #1dcaff;
+    border-radius: 8px;
+
+}
+
 @media (max-width: 600px){
     div.centering > p{
-        font-size: 14vh;
+        font-size: 13vh;
         font-weight: 900;    
         writing-mode: tb-rl; /* IE用 */
         writing-mode: vertical-rl; /* Chrome、Firefox用 */
@@ -32,5 +47,9 @@ div.centering{
         line-height: 1em; /* firefox対策 */
         text-orientation: upright;
         letter-spacing: 0.1em;
+    }
+
+    a.twitter-share-button{
+        margin-top: 20px;
     }
 }
