@@ -3,4 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     Object.keys(anchorDOM).forEach((i) => {
         anchorDOM[i].setAttribute('target','_blank');
     });
+
+    let twitterShereDOM = document.querySelector('.twitter-button');
+    twitterShereDOM.setAttribute('href', 'http://twitter.com/share?url=' + window.location.href + '&text=' + document.title);
 });

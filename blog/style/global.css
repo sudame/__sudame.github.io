@@ -134,3 +134,18 @@ section.meta > table{
     margin-left: auto;
     margin-right: 0;
 }
+
+.share-buttons{
+    text-align: right;
+}
+
+.twitter-button{
+    display: inline-block;
+    background-color: #00aced;
+    color: white;
+    padding: 10px 20px;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 0.8em;
+}
