@@ -28,7 +28,7 @@ h1 {
     text-align: center;
     border-bottom: 5px solid black;
     padding-bottom: 10px;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
 }
 
 h2 {
@@ -123,4 +123,14 @@ li.L0,li.L1,li.L2,li.L3,li.L4,li.L5,li.L6,li.L7,li.L8,li.L9 {
 }
 li.L1,li.L3,li.L5,li.L7,li.L9 {
  background: #F8F8F8;
+}
+
+section.meta{
+    margin-top: 10px;
+    text-align: right;
+}
+
+section.meta > table{
+    margin-left: auto;
+    margin-right: 0;
 }
