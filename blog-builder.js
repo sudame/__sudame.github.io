@@ -22,6 +22,8 @@ fs.readdirSync(`${blogSrc}/src/contents`).forEach((p) => {
             $global('meta[property="og:title"]').attr('content', $contents('title').text());
             $global('meta[property="og:url"]').attr('content', `http://sudame.net/blog/${p}`);
             $global('title').text($contents('title').text());
+            $contents('.content').prepend('<div class="share-buttons"><a class="twitter-button" href="#">Twitterで共有</a></div>');
+            $contents('.content').append('<div class="share-buttons"><a class="twitter-button" href="#">Twitterで共有</a></div>');
         };
         $global('.content').append($contents('.content').html());
         fs.writeFileSync(blogSrc + p, $global.html());
