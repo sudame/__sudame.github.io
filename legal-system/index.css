@@ -85,6 +85,10 @@ div.controllers::before {
     }
 }
 
+div.controllers > * {
+    z-index: 3;
+}
+
 div.controllers > div.button{
     padding: 10px;
     width: calc(40% - 20px);
@@ -94,10 +98,9 @@ div.controllers > div.button{
     height: 30px;
     font-size: 20px;
     font-weight: 600;
-    z-index: 3;
 }
 
-div.controllers > div.button.hidden{
+div.controllers > *.hidden{
     display: none;
 }
 
@@ -107,4 +110,23 @@ div.controllers > div.button.prev{
 
 div.controllers > div.button.forw{
     right: 20px;
+}
+
+div.controllers > div.order {
+    padding: 5px 10px;
+    width: calc(40% - 20px);
+    text-align: center;
+    position: absolute;
+    left: 20px;
+}
+
+div.controllers > div.order > p{
+    font-size: 12px;
+    margin: 2px auto;
+}
+
+div.controllers > div.order > input{
+    margin: 0;
+    height: 15px;
+    background-color: white;
 }
