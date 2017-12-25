@@ -12,6 +12,22 @@ document.addEventListener('DOMContentLoaded', () => {
         setContent();
     });
 
+    let t = 0;
+    document.addEventListener('keydown', (e) =>{
+        console.log(e.keyCode);
+        if(e.shiftKey && e.keyCode == 13){
+            i--
+            setContent(); 
+        } else if(e.keyCode == 13){
+            i++
+            setContent();
+        } else if(e.shiftKey && e.keyCode == 32){
+            if(document.querySelectorAll('.ans:not(.hidden)')) document.querySelectorAll('.ans:not(.hidden)')[document.querySelectorAll('.ans:not(.hidden)').length - 1].classList.add('hidden');
+        }else if(e.keyCode == 32){
+            if(document.querySelector('.ans.hidden')) document.querySelector('.ans.hidden').classList.remove('hidden');
+        }
+    });
+
     function setContent() {
         if(i <= 0) document.querySelector('.button.prev').classList.add('hidden');
         else document.querySelector('.button.prev').classList.remove('hidden');
