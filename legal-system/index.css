@@ -14,6 +14,10 @@ h3{
     text-align: center;
 }
 
+p{
+    font-size: 18px;
+}
+
 div.content{
     width: 85%;
     max-width: 900px;
@@ -41,9 +45,14 @@ span.ans{
     display: inline-block;
     padding: 0 0.5em;
     border: 1px solid black;
-    margin: auto 0.5em;
+    margin: 0.1em 0.5em;
     color: red;
     font-weight: 600;
+    font-size: 20px;
+}
+
+span.ans:hover{
+    cursor: pointer;
 }
 
 span.ans.hidden{
