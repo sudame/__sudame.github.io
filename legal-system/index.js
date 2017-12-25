@@ -14,7 +14,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     let t = 0;
     document.addEventListener('keydown', (e) =>{
-        console.log(e.keyCode);
         if(e.shiftKey && e.keyCode == 13){
             i--
             setContent(); 
@@ -42,7 +41,6 @@ document.addEventListener('DOMContentLoaded', () => {
         const hiddenDOM = document.getElementsByClassName('ans');
         Object.keys(hiddenDOM).forEach((i) => {
             hiddenDOM[i].addEventListener('click', (e) => {
-                console.log(e.target)
                 hiddenDOM[i].classList.toggle('hidden');
             });
         });
