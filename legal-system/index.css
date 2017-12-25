@@ -1,0 +1,101 @@
+html, body{
+    padding: 0;
+    margin: 0;
+    background-color: #eeeeee;
+}
+
+h1{
+    padding: 20px 20px;
+    text-align: center;
+    white-space: nowrap;
+}
+
+h3{
+    text-align: center;
+}
+
+div.content{
+    width: 85%;
+    max-width: 900px;
+    margin: auto auto;
+    padding-bottom: 150px;
+}
+
+div.cards-wrapper{
+    position: relative;
+    top: 5vh;
+}
+
+div.card{
+    background-color: white;
+    padding: 40px 20px;
+}
+
+@media (max-aspect-ratio: 1/1){
+    div.content{
+        width: 100%;
+    }
+}
+
+span.ans{
+    display: inline-block;
+    padding: 0 0.5em;
+    border: 1px solid black;
+    margin: auto 0.5em;
+    color: red;
+    font-weight: 600;
+}
+
+span.ans.hidden{
+    color: white;
+}
+
+div.controllers{
+    position: fixed;
+    width: 85%;
+    max-width: 900px;
+    height: 50px;
+    bottom: 20px;
+}
+
+div.controllers::before {
+    left: 0;
+    right: 0;
+    height: 90px;
+    content: "";
+    display: block;
+    position: fixed;
+    bottom: 0;
+    z-index: 2;
+    background-color: #eee;
+}
+
+@media (max-aspect-ratio: 1/1){
+    div.controllers{
+        width: 100%;
+    }
+}
+
+div.controllers > div.button{
+    padding: 10px;
+    width: calc(40% - 20px);
+    border: 1px solid black;
+    text-align: center;
+    position: absolute;
+    height: 30px;
+    font-size: 20px;
+    font-weight: 600;
+    z-index: 3;
+}
+
+div.controllers > div.button.hidden{
+    display: none;
+}
+
+div.controllers > div.button.prev{
+    left: 20px;
+}
+
+div.controllers > div.button.forw{
+    right: 20px;
+}
