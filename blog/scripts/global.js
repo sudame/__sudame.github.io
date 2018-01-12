@@ -4,6 +4,8 @@ document.addEventListener('DOMContentLoaded', () => {
         anchorDOM[i].setAttribute('target','_blank');
     });
 
-    let twitterShereDOM = document.querySelector('.twitter-button');
-    twitterShereDOM.setAttribute('href', 'http://twitter.com/share?url=' + window.location.href + '&text=' + document.title);
+    let twitterShereDOM = document.querySelectorAll('.twitter-button');
+    twitterShereDOM.forEach((i) => {
+        twitterShereDOM[i].setAttribute('href', 'http://twitter.com/share?url=' + window.location.href + '&text=' + document.title);
+    })
 });
