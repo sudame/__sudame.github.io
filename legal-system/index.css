@@ -1,47 +1,48 @@
-html, body{
+html,
+body {
     padding: 0;
     margin: 0;
     background-color: #eeeeee;
 }
 
-h1{
+h1 {
     padding: 20px 20px;
     text-align: center;
     white-space: nowrap;
 }
 
-h3{
+h3 {
     text-align: center;
 }
 
-p{
+p {
     font-size: 18px;
 }
 
-div.content{
+div.content {
     width: 85%;
     max-width: 900px;
     margin: auto auto;
     padding-bottom: 150px;
 }
 
-div.cards-wrapper{
+div.cards-wrapper {
     position: relative;
     top: 5vh;
 }
 
-div.card{
+div.card {
     background-color: white;
     padding: 40px 20px;
 }
 
-@media (max-aspect-ratio: 1/1){
-    div.content{
+@media (max-aspect-ratio: 1/1) {
+    div.content {
         width: 100%;
     }
 }
 
-span.ans{
+span.ans {
     display: inline-block;
     padding: 0 0.5em;
     border: 1px solid black;
@@ -51,15 +52,15 @@ span.ans{
     font-size: 20px;
 }
 
-span.ans:hover{
+span.ans:hover {
     cursor: pointer;
 }
 
-span.ans.hidden{
+span.ans.hidden {
     color: white;
 }
 
-div.controllers{
+div.controllers {
     position: fixed;
     width: 85%;
     max-width: 900px;
@@ -79,17 +80,17 @@ div.controllers::before {
     background-color: #eee;
 }
 
-@media (max-aspect-ratio: 1/1){
-    div.controllers{
+@media (max-aspect-ratio: 1/1) {
+    div.controllers {
         width: 100%;
     }
 }
 
-div.controllers > * {
+div.controllers>* {
     z-index: 3;
 }
 
-div.controllers > div.button{
+div.controllers>div.button {
     padding: 10px;
     width: calc(40% - 20px);
     border: 1px solid black;
@@ -100,19 +101,19 @@ div.controllers > div.button{
     font-weight: 600;
 }
 
-div.controllers > *.hidden{
+div.controllers>*.hidden {
     display: none;
 }
 
-div.controllers > div.button.prev{
+div.controllers>div.button.prev {
     left: 20px;
 }
 
-div.controllers > div.button.forw{
+div.controllers>div.button.forw {
     right: 20px;
 }
 
-div.controllers > div.order {
+div.controllers>div.order {
     padding: 5px 10px;
     width: calc(40% - 20px);
     text-align: center;
@@ -120,12 +121,12 @@ div.controllers > div.order {
     left: 20px;
 }
 
-div.controllers > div.order > p{
+div.controllers>div.order>p {
     font-size: 12px;
     margin: 2px auto;
 }
 
-div.controllers > div.order > input{
+div.controllers>div.order>input {
     margin: 0;
     height: 15px;
     background-color: white;
