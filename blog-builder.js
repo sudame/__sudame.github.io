@@ -2,21 +2,27 @@ const cheerio = require('cheerio');
 const fs = require('fs');
 
 const blogSrc = './blog/';
-const $index = cheerio.load(fs.readFileSync('./blog/index.html', 'utf-8'), { decodeEntities: false });
+const $index = cheerio.load(fs.readFileSync('./blog/index.html', 'utf-8'), {
+    decodeEntities: false
+});
 $index('.content').text('');
 
-fs.readdirSync(`${blogSrc}/src/contents`).sort((a,b) => {
+fs.readdirSync(`${blogSrc}/src/contents`).sort((a, b) => {
     a = a.toString().toLowerCase();
     b = b.toString().toLowerCase();
-    if(a > b) return -1;
-    else if(a < b) return 1;
+    if (a > b) return -1;
+    else if (a < b) return 1;
     else return 0;
 }).forEach((p) => {
-if (p.match(/.*.html/) && !p.match(/_.*/)) {
-        const $global = cheerio.load(fs.readFileSync('./blog/src/global/global.html', 'utf-8'), { decodeEntities: false });
+    if (p.match(/.*.html/) && !p.match(/_.*/)) {
+        const $global = cheerio.load(fs.readFileSync('./blog/src/global/global.html', 'utf-8'), {
+            decodeEntities: false
+        });
         const c = fs.readFileSync(`${blogSrc}/src/contents/${p}`, 'utf-8');
         const s = fs.statSync(`${blogSrc}/src/contents/${p}`);
-        const $contents = cheerio.load(c, { decodeEntities: false });
+        const $contents = cheerio.load(c, {
+            decodeEntities: false
+        });
         if ($contents('style')) {
             $contents('style').each((i, v) => {
                 $global('head').append(v);
@@ -29,6 +35,13 @@ if (p.match(/.*.html/) && !p.match(/_.*/)) {
             $global('title').text($contents('title').text());
             $contents('.content').prepend('<div class="share-buttons"><a class="twitter-button" href="#">Twitterで共有</a></div>');
             $contents('.content').append('<div class="share-buttons"><a class="twitter-button" href="#">Twitterで共有</a></div>');
+            $contents('.content').prepend(`
+            <div class="header">
+                <h1>
+                    <a href="./">すだめ<wbr>のアレ<a>
+                </h1>
+            </div>
+            `);
         };
         $global('.content').append($contents('.content').html());
         fs.writeFileSync(blogSrc + p, $global.html());
