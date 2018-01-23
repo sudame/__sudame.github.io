@@ -1,15 +1,17 @@
-html, body{
+html,
+body {
     background-color: #eee;
     margin: 50px;
 }
 
-@media(max-width: 800px){
-    html, body{
+@media(max-width: 800px) {
+    html,
+    body {
         margin: 25px 0;
     }
 }
 
-div.content{
+div.content {
     box-sizing: border-box;
     background-color: #ffffff;
     padding: 100px;
@@ -17,36 +19,51 @@ div.content{
     margin: auto auto;
 }
 
-@media(max-width: 500px){
-    div.content{
+@media(max-width: 500px) {
+    div.content {
         padding: 10%;
     }
 }
 
-h1 {
-    white-space: nowrap;    
+h1{
+    text-align: center;
+    font-size: 50px;
+    margin-top: 0;
+    border: 3px solid black;
+    white-space: nowrap;
+}
+
+h1 > a{
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+h2 {
+    white-space: nowrap;
     text-align: center;
     border-bottom: 5px solid black;
     padding-bottom: 10px;
     margin-bottom: 10px;
 }
 
-h2 {
+h3 {
     border-bottom: 2px solid black;
     border-left: 7px solid black;
     padding-left: 15px;
 }
 
-section{
+section {
     margin: 50px auto;
 }
 
-section > p, section > blockquote{
+section>p,
+section>blockquote {
     line-height: 25px;
     letter-spacing: 0.05em;
 }
 
-blockquote{
+blockquote {
     background-color: #eeeeee;
     margin: 0;
     border-left: 8px solid rgba(20, 20, 20, 0.5);
@@ -54,43 +71,50 @@ blockquote{
     padding: 20px 10px 20px 20px;
 }
 
-h3.count,section.tsumatta h3{
+h3.count,
+section.tsumatta h3 {
     counter-increment: number;
 }
 
-h3.count::before{
+h3.count::before {
     content: counter(number)". ";
 }
 
-section.tsumatta h3::before{
+section.tsumatta h3::before {
     content: "[詰まりその" counter(number) "] ";
 }
 
-code{
+code {
     display: inline-block;
     background-color: #EDEDEE;
     padding: 0 5px;
 }
 
-span.bold{
+div.postscript {
+    border-left: 5px solid #888;
+    padding-left: 20px;
+}
+
+span.bold {
     font-weight: bold;
 }
 
-section > img{
+section>img {
     width: 80%;
     display: block;
     margin: auto auto;
 }
 
-@media(max-width: 800px){
-    section > img{
+@media(max-width: 800px) {
+    section>img {
         width: 100%;
     }
 }
 
-twitterwidget, iframe[id^="twitter-widget-"] {
-  margin-left: auto;
-  margin-right: auto;
+twitterwidget,
+iframe[id^="twitter-widget-"] {
+    margin-left: auto;
+    margin-right: auto;
 }
 
 li.L0,
@@ -100,46 +124,64 @@ li.L3,
 li.L5,
 li.L6,
 li.L7,
-li.L8 { list-style-type: inherit }
+li.L8 {
+    list-style-type: inherit
+}
 
 pre.prettyprint {
- padding: 0 0 0 25px;
- background-color: #FFF;
- border: 1px dotted #888;
- font-family: Menlo, Consolas, 'DejaVu Sans Mono', monospace;
- font-size: 14px;
- line-height: 1.4;
- word-wrap:normal
-}
-ol.linenums {
- margin-top: 0;
- margin-bottom: 0;
- background-color: #FFF;
-}
-li.L0,li.L1,li.L2,li.L3,li.L4,li.L5,li.L6,li.L7,li.L8,li.L9 {
- padding-left: 15px;
- line-height: 1.5;
- border-left: 2px solid #6CE26C;
-}
-li.L1,li.L3,li.L5,li.L7,li.L9 {
- background: #F8F8F8;
+    padding: 0 0 0 25px;
+    background-color: #FFF;
+    border: 1px dotted #888;
+    font-family: Menlo, Consolas, 'DejaVu Sans Mono', monospace;
+    font-size: 14px;
+    line-height: 1.4;
+    word-wrap: normal
 }
 
-section.meta{
+ol.linenums {
+    margin-top: 0;
+    margin-bottom: 0;
+    background-color: #FFF;
+}
+
+li.L0,
+li.L1,
+li.L2,
+li.L3,
+li.L4,
+li.L5,
+li.L6,
+li.L7,
+li.L8,
+li.L9 {
+    padding-left: 15px;
+    line-height: 1.5;
+    border-left: 2px solid #6CE26C;
+}
+
+li.L1,
+li.L3,
+li.L5,
+li.L7,
+li.L9 {
+    background: #F8F8F8;
+}
+
+section.meta {
     margin-top: 10px;
     text-align: right;
 }
 
-section.meta > table{
+section.meta>table {
     margin-left: auto;
     margin-right: 0;
 }
 
-.share-buttons{
+.share-buttons {
     text-align: right;
 }
 
-.twitter-button{
+.twitter-button {
     display: inline-block;
     background-color: #00aced;
     color: white;
