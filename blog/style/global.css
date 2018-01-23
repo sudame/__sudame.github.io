@@ -25,15 +25,16 @@ div.content {
     }
 }
 
-h1{
+h1 {
     text-align: center;
     font-size: 50px;
+    font-weight: 800;
     margin-top: 0;
     border: 3px solid black;
     white-space: nowrap;
 }
 
-h1 > a{
+h1>a {
     display: block;
     text-decoration: none;
     color: inherit;
