@@ -45,6 +45,19 @@ div.iamsudame-wrapper>.arrow>.material-icons {
     font-size: 15vw;
 }
 
+div.panel.twitter{
+    background-color: #1DA1F2;
+    display: table;
+}
+
+div.panel.twitter a{
+    display: table-cell;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    vertical-align: middle;
+}
+
 a.twitter-share-button {
     display: inline-block;
 }
