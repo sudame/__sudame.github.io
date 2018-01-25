@@ -58,6 +58,10 @@ div.panel.twitter a{
     vertical-align: middle;
 }
 
+div.panel.twitter a img{
+    max-width: 100%;
+}
+
 a.twitter-share-button {
     display: inline-block;
 }
