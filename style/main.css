@@ -60,6 +60,7 @@ div.panel.twitter a{
 
 div.panel.twitter a img{
     max-width: 100%;
+    max-height: 100%;
 }
 
 a.twitter-share-button {
