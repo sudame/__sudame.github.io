@@ -58,11 +58,10 @@ div.panel.sns a {
     vertical-align: middle;
 }
 
-@media(max-aspect-ratio: 1/1){
+@media(max-aspect-ratio: 1/1) {
     div.panel.sns {
         display: inherit;
     }
-
     div.panel.sns a {
         display: flex;
         flex-direction: column;
@@ -71,17 +70,16 @@ div.panel.sns a {
         width: 100%;
         height: 50%;
     }
-
-    div.panel.sns a img{
+    div.panel.sns a img {
         object-fit: contain;
     }
 }
 
-div.panel.sns a.twitter{
-    background-color: #1DA1F2;    
+div.panel.sns a.twitter {
+    background-color: #1DA1F2;
 }
 
-div.panel.sns a.github{
+div.panel.sns a.github {
     background-color: #eee;
 }
 
@@ -101,21 +99,16 @@ a.twitter-share-button>img {
 @media (max-aspect-ratio: 1/1) {
     div.iamsudame>p {
         position: relative;
+        bottom: 3vh;
         font-size: 13vh;
         font-weight: 900;
         writing-mode: tb-rl;
-        /* IE用 */
         writing-mode: vertical-rl;
-        /* Chrome、Firefox用 */
+        text-orientation: upright;
         margin: 0 auto;
         white-space: nowrap;
         width: 1em;
-        /* firefox対策 */
         line-height: 1em;
-        /* firefox対策 */
-        text-orientation: upright;
-        letter-spacing: 0.1em;
-        bottom: 3vh;
     }
     div.iamsudame-wrapper>.arrow {
         position: absolute;
