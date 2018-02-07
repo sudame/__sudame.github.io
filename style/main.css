@@ -6,7 +6,7 @@ body {
 
 div.panel {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 div.iamsudame-wrapper {
@@ -68,7 +68,7 @@ div.panel.sns a {
         justify-content: center;
         align-items: center;
         width: 100%;
-        height: 50%;
+        height: 50vh;
     }
     div.panel.sns a img {
         object-fit: contain;
@@ -132,5 +132,86 @@ a.twitter-share-button>img {
     }
     100% {
         opacity: 100%;
+    }
+}
+
+div.about, div.productions{
+    padding: 5vw 20vh;
+    box-sizing: border-box;
+}
+
+div.panel-contents{
+    max-width: 800px;
+    margin: auto auto;
+}
+
+div.panel-contents > h1{
+    margin: auto;
+    font-weight: 200;
+    font-size: 120px;
+}
+
+div.panel-contents  table, div.panel-contents  p{
+    font-weight: 300;
+}
+
+div.panel-contents  table td{
+    vertical-align: top;
+    padding: 10px 0;
+}
+
+div.panel-contents > table td:first-of-type{
+    white-space: nowrap;
+}
+
+div.panel-contents  table td:not(:first-of-type){
+    padding-left: 10px;
+}
+
+div.about-contents_prof{
+    margin-top: 25px;
+}
+
+table.productions-table td:first-of-type > div{
+    display: flex;
+    flex-direction: row;
+}
+
+table.productions-table td:first-of-type > div > div:not(:first-of-type){
+    margin-left: 10px;
+}
+
+@media(max-width: 800px){
+    div.panel-contents > *[class$="contents"]{
+        padding: 25px 25px;
+    }
+
+    div.panel-contents > h1{
+        font-size: 80px;
+    }
+
+    table.productions-table td:first-of-type > div{
+        display: flex;
+        flex-direction: column;
+    }
+
+    table.productions-table td:first-of-type > div > div:not(:first-of-type){
+        margin-left: 0;
+    }
+}
+
+@media(max-width: 500px){
+    div.panel-contents > h1{
+        font-size: 50px;
+    }
+}
+
+@media(max-aspect-ratio: 1/1){
+    div.about, div.productions{
+        padding: 25px 10px;
+    }
+
+    div.panel-contents > h1{
+        text-align: center;
     }
 }
