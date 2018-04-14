@@ -179,11 +179,18 @@ div.panel-contents > h1 {
 div.panel-contents table,
 div.panel-contents p {
   font-weight: 200;
+  width: 100%;
 }
 
 div.panel-contents table td {
   vertical-align: top;
   padding: 10px 0;
+  border-top: 1px black dotted;    
+  min-width: 130px;
+}
+
+div.panel-contents table tr:last-of-type td{
+  border-bottom: 1px black dotted;
 }
 
 div.panel-contents > table td:first-of-type {
